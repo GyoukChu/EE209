@@ -1,0 +1,31 @@
+CHU GYOUK 20200678 Assignment 3
+
+I implemented hash table expansion. A function named Resize in customer_manager2.c
+(line 179~220) implements it.
+
+References
+[1] https://ece.uwaterloo.ca/~dwharder/aads/Algorithms/Array_resizing/
+- To search what is the most efficient way to increase/decrease the size of array
+
+[2] https://www.sysnet.pe.kr/2/0/1222
+- To search better hash function for string
+
+Q. Compare the implementation between using array and hash table.
+Ans) 
+1. For array, delete, and insert operation takes O(n) time (n == curArrSize)
+(if we know the index, then search takes constant time, O(1) but 
+ we don't know the index of target UserInfo according to the code I wrote.) 
+However, for hash table, they take O(1) time as long as hash function 
+disperses Userinfo objects uniformly.
+
+2. Obviously, an additional operation is required to compute the hash value.
+Moreover, If the hash function is not good so that hash collision occurs frequently, then
+since the search/delete/insert time becomes also O(n), there is no particular 
+improvement in using a hash table.
+
+3. Arrays are easy to implement. (it is subjective although) Even in the case of sequential access, 
+since an array allocates data in a contiguous memory space, faster performance can possibly be shown \
+if hash collision occurs a lot so that very long linked list is created.
+
+4. Also, rather than array, hash table uses more memory. So, implementation 
+based on hash table can cause some memory problems.

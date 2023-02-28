@@ -1,0 +1,25 @@
+CHU GYOUK 20200678 Assignment 4
+
+References
+[1] https://maruen.tistory.com/entry/%EC%96%B4%EC%85%88%EB%B8%94%EB%A6%AC%EC%96%B4imul%EA%B3%BC-dividiv%EC%99%80-%ED%99%95%EC%9E%A5%EB%AA%85%EB%A0%B9%EC%96%B4
+- To understand how to use imul and idiv
+[2] https://m.blog.naver.com/zxwnstn/221515952602
+- Command CBW, CWD, CDQ
+
+INFO
+- check the first non-digit character of input as like switch statement
+  (namely, p, q, +, -, *, /, %, ^, _, f, c, d, r)
+
+- For underscore character, ignore _ and change into int.
+And then, multiply -1 is done. Here, error can occur for INT_MIN case.
+So, exceptionally handle the INT_MIN case. (line 325)
+
+- To use imull, 32bit division requires %eax be sign-extended into %edx.
+So, use cdq. quotient (for /) is in %eax, remainder (for %) is in %edx.
+
+- Overflow can occur for +, -, *, ^ cases
+- Also can occur for / cases. Only when INT_MIN/(-1).
+In that case, I exceptionally handle it. overflow error for /, and 0 for %. (line 239, 269)
+- Zero-division can occur for /, % cases
+
+- implement exponent function ('^') by calling "mypowerfunc". (line 305)

@@ -1,0 +1,10 @@
+CHU GYOUK 20200678 Assignment 5
+
+References
+[1] https://stackoverflow.com/questions/36387815/signals-and-sleep-not-working-properly
+- To search how to distinguish the first SIGQUIT signal and second one.
+
+I implemented redirection, but not pipe and background process.
+However, in lexical analysis and syntatic analysis stage of input commands,
+I just distinguish the '&' and '|' as other type of token and
+only just do clarify the error cases. 

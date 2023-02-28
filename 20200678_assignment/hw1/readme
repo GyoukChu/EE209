@@ -1,0 +1,13 @@
+CHU GYOUK 20200678 Assignment 1
+
+References
+https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=nds239&logNo=10133867542
+
+- To check how to print the standard error stream.
+
+I spent about 10 hours on this assignment 1.
+
+( At first, I tried to count the number of newlines, words, and characters after performing
+'decommenting' first as shown in the guideline. However, I spent more time thinking about
+how to do all of these stuff at once. As a result, like the code I submitted, I use some proper
+states and appropriate variables for each transition to achieve the goal. )

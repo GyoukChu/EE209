@@ -1,0 +1,20 @@
+CHU GYOUK 20200678 Assignment 2
+
+I spent 23 hours to do this assignment2.
+
+"I only used the pointer notation for this assignment2."
+
+References
+[1] All the Linux Man Pages related to this assignment2.
+Namely, STRLEN, STRCPY, STRCMP, STRCHR, STRSTR, STRCAT, STRTOL, GREP, and FGETS.
+
+[2] https://stackoverflow.com/questions/3851029/how-can-we-find-memory-size-from-given-memory-pointer
+- To search for answers to the question asked to write in the readme file (right below)
+
+"Is it possible for StrCopy to call assert to verify that the destination memory area specified by the caller is large enough? Explain."
+
+Ans) No. To assert to verify that memory area of Dest is large enough, we need to know the exact memory size of Dest. 
+But we cannot get the size of destination buffer. In C, we cannot measure memory size only with pointer. 
+(Therefore, it is not related to the implementation, but related to 'how user may use this function'.
+ - Answer of Question #287 in our Campuswire group)
+
